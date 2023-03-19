@@ -1,1 +1,4 @@
-<p>product-list works!</p>
+<!--Accessing products from component-->
+<p *ngFor="let tempProduct of products">
+   {{ tempProduct.name }}: {{ tempProduct.unitPrice | currency:'EUR'}}
+</p>
